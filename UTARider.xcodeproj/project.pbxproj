@@ -12,9 +12,12 @@
 		1E42D2ED1FBE0DA400C71652 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E42D2EB1FBE0DA400C71652 /* Main.storyboard */; };
 		1E42D2EF1FBE0DA400C71652 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E42D2EE1FBE0DA400C71652 /* Assets.xcassets */; };
 		1E42D2F21FBE0DA400C71652 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E42D2F01FBE0DA400C71652 /* LaunchScreen.storyboard */; };
+		1E42D2FA1FBE0E4800C71652 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1E42D2F91FBE0E4800C71652 /* GoogleService-Info.plist */; };
+		A8D5F3DE46D04B1E4D6141AA /* Pods_UTARider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4465BD55CF23E967633DD8CA /* Pods_UTARider.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1BC6C0CD254E2F351558F76E /* Pods-UTARider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UTARider.release.xcconfig"; path = "Pods/Target Support Files/Pods-UTARider/Pods-UTARider.release.xcconfig"; sourceTree = "<group>"; };
 		1E42D2E41FBE0DA400C71652 /* UTARider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UTARider.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E42D2E71FBE0DA400C71652 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E42D2E91FBE0DA400C71652 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,9 @@
 		1E42D2EE1FBE0DA400C71652 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E42D2F11FBE0DA400C71652 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E42D2F31FBE0DA400C71652 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E42D2F91FBE0E4800C71652 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4465BD55CF23E967633DD8CA /* Pods_UTARider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UTARider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F8ADDD96C932C1F3144A73D /* Pods-UTARider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UTARider.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UTARider/Pods-UTARider.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8D5F3DE46D04B1E4D6141AA /* Pods_UTARider.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				1E42D2E61FBE0DA400C71652 /* UTARider */,
 				1E42D2E51FBE0DA400C71652 /* Products */,
+				51D4C42FE4637899C528B7EC /* Pods */,
+				9D753F00A99831CE67327640 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +69,26 @@
 				1E42D2EE1FBE0DA400C71652 /* Assets.xcassets */,
 				1E42D2F01FBE0DA400C71652 /* LaunchScreen.storyboard */,
 				1E42D2F31FBE0DA400C71652 /* Info.plist */,
+				1E42D2F91FBE0E4800C71652 /* GoogleService-Info.plist */,
 			);
 			path = UTARider;
+			sourceTree = "<group>";
+		};
+		51D4C42FE4637899C528B7EC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5F8ADDD96C932C1F3144A73D /* Pods-UTARider.debug.xcconfig */,
+				1BC6C0CD254E2F351558F76E /* Pods-UTARider.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9D753F00A99831CE67327640 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4465BD55CF23E967633DD8CA /* Pods_UTARider.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1E42D2F61FBE0DA400C71652 /* Build configuration list for PBXNativeTarget "UTARider" */;
 			buildPhases = (
+				93323C28CF0DB9B5D60E0CBA /* [CP] Check Pods Manifest.lock */,
 				1E42D2E01FBE0DA400C71652 /* Sources */,
 				1E42D2E11FBE0DA400C71652 /* Frameworks */,
 				1E42D2E21FBE0DA400C71652 /* Resources */,
+				41FC7507898AFB6A24685A37 /* [CP] Embed Pods Frameworks */,
+				BF34957F528B6DAF245C98DF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,12 +154,73 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E42D2F21FBE0DA400C71652 /* LaunchScreen.storyboard in Resources */,
+				1E42D2FA1FBE0E4800C71652 /* GoogleService-Info.plist in Resources */,
 				1E42D2EF1FBE0DA400C71652 /* Assets.xcassets in Resources */,
 				1E42D2ED1FBE0DA400C71652 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		41FC7507898AFB6A24685A37 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-UTARider/Pods-UTARider-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UTARider/Pods-UTARider-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93323C28CF0DB9B5D60E0CBA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UTARider-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF34957F528B6DAF245C98DF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UTARider/Pods-UTARider-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1E42D2E01FBE0DA400C71652 /* Sources */ = {
@@ -272,6 +363,7 @@
 		};
 		1E42D2F71FBE0DA400C71652 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F8ADDD96C932C1F3144A73D /* Pods-UTARider.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +379,7 @@
 		};
 		1E42D2F81FBE0DA400C71652 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BC6C0CD254E2F351558F76E /* Pods-UTARider.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
