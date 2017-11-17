@@ -512,7 +512,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sUg-2m-pPm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2180" y="665.21739130434787"/>
+            <point key="canvasLocation" x="2180" y="795"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="uCU-3Z-UTF">
@@ -559,10 +559,10 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-defaultAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="2Lr-ox-opf">
-                                    <rect key="frame" x="127" y="8" width="120" height="120"/>
+                                    <rect key="frame" x="127" y="8" width="120" height="91"/>
                                 </imageView>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6qq-F7-1wg">
-                                    <rect key="frame" x="127" y="122" width="120" height="28"/>
+                                    <rect key="frame" x="127" y="117" width="120" height="28"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                     <state key="normal" title="Select Profile Photo"/>
                                     <connections>
@@ -572,10 +572,10 @@
                             </subviews>
                             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             <constraints>
-                                <constraint firstItem="6qq-F7-1wg" firstAttribute="top" secondItem="Lue-ay-Fjk" secondAttribute="top" constant="122" id="Ism-Fc-Ohd"/>
+                                <constraint firstItem="6qq-F7-1wg" firstAttribute="top" secondItem="Lue-ay-Fjk" secondAttribute="top" constant="117" id="Ism-Fc-Ohd"/>
                                 <constraint firstItem="2Lr-ox-opf" firstAttribute="top" secondItem="Lue-ay-Fjk" secondAttribute="top" constant="8" id="OQ9-xx-yMh"/>
                                 <constraint firstItem="6qq-F7-1wg" firstAttribute="centerX" secondItem="Lue-ay-Fjk" secondAttribute="centerX" id="WWp-Sy-wet"/>
-                                <constraint firstAttribute="bottom" secondItem="2Lr-ox-opf" secondAttribute="bottom" constant="17" id="d3X-MC-2GW"/>
+                                <constraint firstAttribute="bottom" secondItem="2Lr-ox-opf" secondAttribute="bottom" constant="46" id="d3X-MC-2GW"/>
                                 <constraint firstItem="2Lr-ox-opf" firstAttribute="centerX" secondItem="Lue-ay-Fjk" secondAttribute="centerX" id="wc0-zI-MBw"/>
                             </constraints>
                         </view>
@@ -737,7 +737,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IoT-nt-4Tg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="490.39999999999998" y="-631.93403298350825"/>
+            <point key="canvasLocation" x="489.5" y="-632.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bEt-qH-Z95">
@@ -768,6 +768,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="hhk-dH-Chq"/>
-        <segue reference="w4A-Tb-cMP"/>
+        <segue reference="6rn-Ef-ozG"/>
     </inferredMetricsTieBreakers>
 </document>
