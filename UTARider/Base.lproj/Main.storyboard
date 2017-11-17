@@ -297,7 +297,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                                     <items>
-                                                        <barButtonItem title="Item" image="icon-profile" id="exm-FN-9GQ">
+                                                        <barButtonItem image="icon-profile" id="exm-FN-9GQ">
                                                             <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                             <connections>
                                                                 <segue destination="frU-yB-yXu" kind="show" id="TK4-Qo-rDC"/>
@@ -767,7 +767,7 @@
         <image name="icon-profile" width="200" height="200"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="hhk-dH-Chq"/>
+        <segue reference="CEi-43-Suh"/>
         <segue reference="6rn-Ef-ozG"/>
     </inferredMetricsTieBreakers>
 </document>
