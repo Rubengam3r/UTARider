@@ -558,7 +558,7 @@
                             <rect key="frame" x="0.0" y="0.0" width="375" height="145"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-defaultAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="2Lr-ox-opf">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-defaultAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="2Lr-ox-opf">
                                     <rect key="frame" x="127" y="8" width="120" height="120"/>
                                 </imageView>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6qq-F7-1wg">
@@ -573,9 +573,10 @@
                             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             <constraints>
                                 <constraint firstItem="6qq-F7-1wg" firstAttribute="top" secondItem="Lue-ay-Fjk" secondAttribute="top" constant="122" id="Ism-Fc-Ohd"/>
+                                <constraint firstItem="2Lr-ox-opf" firstAttribute="top" secondItem="Lue-ay-Fjk" secondAttribute="top" constant="8" id="OQ9-xx-yMh"/>
                                 <constraint firstItem="6qq-F7-1wg" firstAttribute="centerX" secondItem="Lue-ay-Fjk" secondAttribute="centerX" id="WWp-Sy-wet"/>
-                                <constraint firstItem="2Lr-ox-opf" firstAttribute="centerX" secondItem="Lue-ay-Fjk" secondAttribute="centerX" id="aG1-gy-Lt0"/>
-                                <constraint firstItem="2Lr-ox-opf" firstAttribute="top" secondItem="Lue-ay-Fjk" secondAttribute="top" constant="8" id="xll-gp-knB"/>
+                                <constraint firstAttribute="bottom" secondItem="2Lr-ox-opf" secondAttribute="bottom" constant="17" id="d3X-MC-2GW"/>
+                                <constraint firstItem="2Lr-ox-opf" firstAttribute="centerX" secondItem="Lue-ay-Fjk" secondAttribute="centerX" id="wc0-zI-MBw"/>
                             </constraints>
                         </view>
                         <sections>

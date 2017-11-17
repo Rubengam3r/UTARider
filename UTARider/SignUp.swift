@@ -40,14 +40,12 @@ class SignUp: UITableViewController, UINavigationControllerDelegate, UIImagePick
     @IBAction func SelectProfileImage(_ sender: Any) {
         let picker = UIImagePickerController()
         picker.delegate = self
-        picker.allowsEditing = true
+        picker.allowsEditing = false
         picker.sourceType = UIImagePickerControllerSourceType.photoLibrary
         self.present(picker, animated: true, completion: nil)
     }
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
-            ProfileImage.layer.cornerRadius = ProfileImage.frame.size.width/2
-            ProfileImage.clipsToBounds = true
             ProfileImage.image = image
         }
         else{
