@@ -7,17 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E274BD91FBE387800F0D22D /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E274BD81FBE387800F0D22D /* SignIn.swift */; };
+		1E407C0D1FBE126100A1885B /* LandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E407C0C1FBE126100A1885B /* LandingPage.swift */; };
+		1E407C0F1FBE131200A1885B /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E407C0E1FBE131200A1885B /* AlertController.swift */; };
+		1E407C111FBE201B00A1885B /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E407C101FBE201B00A1885B /* SignUp.swift */; };
 		1E42D2E81FBE0DA400C71652 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E42D2E71FBE0DA400C71652 /* AppDelegate.swift */; };
 		1E42D2EA1FBE0DA400C71652 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E42D2E91FBE0DA400C71652 /* ViewController.swift */; };
 		1E42D2ED1FBE0DA400C71652 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E42D2EB1FBE0DA400C71652 /* Main.storyboard */; };
 		1E42D2EF1FBE0DA400C71652 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E42D2EE1FBE0DA400C71652 /* Assets.xcassets */; };
 		1E42D2F21FBE0DA400C71652 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E42D2F01FBE0DA400C71652 /* LaunchScreen.storyboard */; };
 		1E42D2FA1FBE0E4800C71652 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1E42D2F91FBE0E4800C71652 /* GoogleService-Info.plist */; };
+		1E561F401FBE47F10098CAAF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E561F3F1FBE47F10098CAAF /* MainView.swift */; };
+		1E561F421FBE498C0098CAAF /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E561F411FBE498C0098CAAF /* ProfileView.swift */; };
 		A8D5F3DE46D04B1E4D6141AA /* Pods_UTARider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4465BD55CF23E967633DD8CA /* Pods_UTARider.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1BC6C0CD254E2F351558F76E /* Pods-UTARider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UTARider.release.xcconfig"; path = "Pods/Target Support Files/Pods-UTARider/Pods-UTARider.release.xcconfig"; sourceTree = "<group>"; };
+		1E274BD81FBE387800F0D22D /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
+		1E407C0C1FBE126100A1885B /* LandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPage.swift; sourceTree = "<group>"; };
+		1E407C0E1FBE131200A1885B /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
+		1E407C101FBE201B00A1885B /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
 		1E42D2E41FBE0DA400C71652 /* UTARider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UTARider.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E42D2E71FBE0DA400C71652 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E42D2E91FBE0DA400C71652 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +36,10 @@
 		1E42D2F11FBE0DA400C71652 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E42D2F31FBE0DA400C71652 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E42D2F91FBE0E4800C71652 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1E561F3F1FBE47F10098CAAF /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		1E561F411FBE498C0098CAAF /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		1EA481C51FBE52DB0046037B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		1EA481C61FBE54700046037B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		4465BD55CF23E967633DD8CA /* Pods_UTARider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UTARider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F8ADDD96C932C1F3144A73D /* Pods-UTARider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UTARider.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UTARider/Pods-UTARider.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,6 +84,12 @@
 				1E42D2F01FBE0DA400C71652 /* LaunchScreen.storyboard */,
 				1E42D2F31FBE0DA400C71652 /* Info.plist */,
 				1E42D2F91FBE0E4800C71652 /* GoogleService-Info.plist */,
+				1E407C0C1FBE126100A1885B /* LandingPage.swift */,
+				1E407C0E1FBE131200A1885B /* AlertController.swift */,
+				1E407C101FBE201B00A1885B /* SignUp.swift */,
+				1E274BD81FBE387800F0D22D /* SignIn.swift */,
+				1E561F3F1FBE47F10098CAAF /* MainView.swift */,
+				1E561F411FBE498C0098CAAF /* ProfileView.swift */,
 			);
 			path = UTARider;
 			sourceTree = "<group>";
@@ -86,6 +106,8 @@
 		9D753F00A99831CE67327640 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1EA481C61FBE54700046037B /* MapKit.framework */,
+				1EA481C51FBE52DB0046037B /* CoreLocation.framework */,
 				4465BD55CF23E967633DD8CA /* Pods_UTARider.framework */,
 			);
 			name = Frameworks;
@@ -172,14 +194,12 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-UTARider/Pods-UTARider-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,8 +247,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E561F421FBE498C0098CAAF /* ProfileView.swift in Sources */,
+				1E407C0F1FBE131200A1885B /* AlertController.swift in Sources */,
+				1E561F401FBE47F10098CAAF /* MainView.swift in Sources */,
+				1E274BD91FBE387800F0D22D /* SignIn.swift in Sources */,
 				1E42D2EA1FBE0DA400C71652 /* ViewController.swift in Sources */,
 				1E42D2E81FBE0DA400C71652 /* AppDelegate.swift in Sources */,
+				1E407C0D1FBE126100A1885B /* LandingPage.swift in Sources */,
+				1E407C111FBE201B00A1885B /* SignUp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

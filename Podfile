@@ -8,7 +8,5 @@ target 'UTARider' do
   # Pods for UTARider
 pod 'Firebase/Core'
 pod 'Firebase/Auth'
-pod 'Firebase/Database'
-
 
 end
