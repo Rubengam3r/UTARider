@@ -19,6 +19,8 @@
 		1E561F401FBE47F10098CAAF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E561F3F1FBE47F10098CAAF /* MainView.swift */; };
 		1E561F421FBE498C0098CAAF /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E561F411FBE498C0098CAAF /* ProfileView.swift */; };
 		1EB36DC31FC337F900BAB529 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1EB36DC21FC337F900BAB529 /* GoogleService-Info.plist */; };
+		3EAE90961FC3B14A003BA131 /* FlyOutMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAE90951FC3B14A003BA131 /* FlyOutMenu.swift */; };
+		3EAE90981FC3B744003BA131 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAE90971FC3B744003BA131 /* FavoritesView.swift */; };
 		A8D5F3DE46D04B1E4D6141AA /* Pods_UTARider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4465BD55CF23E967633DD8CA /* Pods_UTARider.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +42,8 @@
 		1EA481C51FBE52DB0046037B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		1EA481C61FBE54700046037B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		1EB36DC21FC337F900BAB529 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3EAE90951FC3B14A003BA131 /* FlyOutMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyOutMenu.swift; sourceTree = "<group>"; };
+		3EAE90971FC3B744003BA131 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 		4465BD55CF23E967633DD8CA /* Pods_UTARider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UTARider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F8ADDD96C932C1F3144A73D /* Pods-UTARider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UTARider.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UTARider/Pods-UTARider.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,6 +94,8 @@
 				1E274BD81FBE387800F0D22D /* SignIn.swift */,
 				1E561F3F1FBE47F10098CAAF /* MainView.swift */,
 				1E561F411FBE498C0098CAAF /* ProfileView.swift */,
+				3EAE90951FC3B14A003BA131 /* FlyOutMenu.swift */,
+				3EAE90971FC3B744003BA131 /* FavoritesView.swift */,
 			);
 			path = UTARider;
 			sourceTree = "<group>";
@@ -247,7 +253,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EAE90981FC3B744003BA131 /* FavoritesView.swift in Sources */,
 				1E561F421FBE498C0098CAAF /* ProfileView.swift in Sources */,
+				3EAE90961FC3B14A003BA131 /* FlyOutMenu.swift in Sources */,
 				1E407C0F1FBE131200A1885B /* AlertController.swift in Sources */,
 				1E561F401FBE47F10098CAAF /* MainView.swift in Sources */,
 				1E274BD91FBE387800F0D22D /* SignIn.swift in Sources */,
