@@ -36,7 +36,39 @@ class MainView: UITableViewController, CLLocationManagerDelegate, MKMapViewDeleg
         locationManger.desiredAccuracy = kCLLocationAccuracyBest
         locationManger.requestWhenInUseAuthorization()
         locationManger.startUpdatingLocation()
+        setupNavBarButtons()
     }
     
+    func setupNavBarButtons() {
+        let menuButton = UIBarButtonItem(image: UIImage(named:"icon-menu")?.withRenderingMode(.alwaysOriginal),style: .plain, target: self, action: #selector(handleMore))
+        
+        navigationItem.rightBarButtonItem = (menuButton)
+    }
+   // THIS CODE IS ONLY CALLED ONCE IF menueLanucher is nil
+    lazy var menuLauncher: MenuLauncher = {
+        let launcher = MenuLauncher()
+        launcher.mainView = self
+        return launcher
+    }()
+    
+    @objc func handleMore() {
+        menuLauncher.ShowMenu()
+       
+    }
+    func showControllerForMenu(menu: Menu) {
+        if menu.name == "Plan My Trip" {
+            performSegue(withIdentifier: "TripPlanner", sender: nil)
+        }
+        else if menu.name == "Alerts & Detours"{
+            performSegue(withIdentifier: "AlertsDetours", sender: nil)
+        }
+        else if menu.name == "Contact Dispatch"{
+            let dispatchNum: NSURL = URL(string: "TEL://8017433882")! as NSURL
+            UIApplication.shared.open(dispatchNum as URL, options: [:], completionHandler: nil)
+        }
+
+       //let dummyMenuViewController = UIViewController()
+        //navigationController?.pushViewController(dummyMenuViewController, animated: true)
+    }
     
 }

@@ -9,6 +9,15 @@
 import UIKit
 
 class LandingScreen: UIViewController {
+    //CHANGE STATUS BAR TO WHITE
+    override func viewWillAppear(_ animated: Bool) {
+        UIApplication.shared.statusBarStyle = .lightContent
+    }
+    @IBAction func CallCustomerServiceTapped(_ sender: Any) {
+        let dispatchNum: NSURL = URL(string: "TEL://8017433882")! as NSURL
+        UIApplication.shared.open(dispatchNum as URL, options: [:], completionHandler: nil)
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

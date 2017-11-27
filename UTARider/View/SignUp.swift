@@ -17,6 +17,11 @@ class SignUp: UITableViewController, UINavigationControllerDelegate, UIImagePick
     @IBOutlet var UserNameTextField: UITextField!
     @IBOutlet var PasswordTextField: UITextField!
     let activityIndicator = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
+    
+    //CHANGE STATUS BAR TO DEFAULT
+    override func viewWillAppear(_ animated: Bool) {
+        UIApplication.shared.statusBarStyle = .default
+    }
     //TAP ON THE APP OUTSIDE KEYBOARD
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
