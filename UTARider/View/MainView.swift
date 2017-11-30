@@ -37,8 +37,36 @@ class MainView: UITableViewController, CLLocationManagerDelegate, MKMapViewDeleg
         locationManger.requestWhenInUseAuthorization()
         locationManger.startUpdatingLocation()
         setupNavBarButtons()
+        parseJSON()
     }
-    
+    func parseJSON(){
+        let url = URL(string: "http://api.rideuta.com/utartapi/vehiclemonitor/ByRoute?route=209&onwardcalls=true&usertoken=URKSUBIBOM0&format=json")!
+        
+        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+            
+            if error != nil {
+                AlertController.showAlert(_inViewController: self, title: "Error", message: ("Fatal Error"))
+            } else {
+                if let urlContent = data {
+                    do {
+  /*Start Here*/                      let jsonResult = try JSONSerialization.jsonObject(with: urlContent, options: JSONSerialization.ReadingOptions.mutableContainers) as AnyObject
+                      // print(jsonResult)
+                        if let vehicleMonitoringDic = (jsonResult["serviceDelivery"] as? NSDictionary)?["vehicleMonitoringDelivery"] as? NSDictionary {
+                            print(vehicleMonitoringDic)
+                           // let vehicleMonitoringDelivery = (serviceDeliveryDic["vehicleMonitoringDelivery"] as? NSDictionary)
+                            //print(vehicleMonitoringDelivery!)
+                        }
+                       
+          
+                    } catch {
+                        AlertController.showAlert(_inViewController: self, title: "Error", message: "JSON Processing Failed")
+                    }
+                }
+                
+            }
+        }
+        task.resume()
+    }
     func setupNavBarButtons() {
         let menuButton = UIBarButtonItem(image: UIImage(named:"icon-menu")?.withRenderingMode(.alwaysOriginal),style: .plain, target: self, action: #selector(handleMore))
         
