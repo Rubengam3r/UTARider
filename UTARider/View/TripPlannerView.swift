@@ -9,9 +9,16 @@
 import UIKit
 
 class TripPlannerView : UITableViewController {
+    
+    @IBOutlet var startLocationTextField: UITextField!
+    @IBOutlet var endLocationTextField: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Trip Planner"
+    }
+    @IBAction func PlanTripTapped(_ sender: Any) {
     }
     
 }
